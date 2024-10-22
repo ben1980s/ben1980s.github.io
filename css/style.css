@@ -320,7 +320,7 @@ dfn {
   width: 60px;
   height: 60px;
   right: 40px;
-  bottom: 40px;
+  bottom: 100px;
   padding: 12px;
   transform: translate3d(0, 100%, 0);
 }

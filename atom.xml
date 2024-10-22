@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>ben1980s</title>
+  <title>ben1980s&#39;s Blog</title>
   
-  
+  <subtitle>專案開發 資安 </subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
