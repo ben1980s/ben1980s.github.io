@@ -193,6 +193,33 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+.navbar {
+  display: flex; /* 使用 flexbox 來排列導航項 */
+  justify-content: space-between; /* 在橫向排列中均分空間 */
+  flex-wrap: wrap; /* 在需要時換行 */
+  background-color: var(--theme-bg-primary); /* 背景顏色 */
+  padding: 10px; /* 加一些內邊距 */
+}
+.nav-item {
+  flex: 1; /* 每個項目占據相等的空間 */
+  text-align: center; /* 文字居中 */
+}
+.nav-item a {
+  display: block; /* 使連結區域可點擊 */
+  padding: 10px; /* 增加內邊距 */
+  color: inherit; /* 繼承顏色 */
+  text-decoration: none; /* 去掉下劃線 */
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* 在小螢幕上垂直排列 */
+    align-items: stretch; /* 拉伸以填滿整個寬度 */
+  }
+  .nav-item {
+    width: 100%; /* 使每個項目佔滿整個寬度 */
+    margin-bottom: 10px; /* 每個項目之間的間距 */
+  }
+}
 body {
   font-size: var(--font-base-size);
   line-height: var(--font-base-lh);
@@ -320,7 +347,7 @@ dfn {
   width: 60px;
   height: 60px;
   right: 40px;
-  bottom: 100px;
+  bottom: 40px;
   padding: 12px;
   transform: translate3d(0, 100%, 0);
 }
