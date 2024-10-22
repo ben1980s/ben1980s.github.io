@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-10-22T14:26:33.807Z</updated>
+  <updated>2024-10-22T14:28:49.405Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,32 +17,12 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>專題製作-神經網絡系統</title>
     <link href="http://example.com/2024/10/22/%E5%B0%88%E9%A1%8C%E8%A3%BD%E4%BD%9C-%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1%E7%B3%BB%E7%B5%B1/"/>
     <id>http://example.com/2024/10/22/%E5%B0%88%E9%A1%8C%E8%A3%BD%E4%BD%9C-%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1%E7%B3%BB%E7%B5%B1/</id>
-    <published>2024-10-22T14:26:33.807Z</published>
-    <updated>2024-10-22T14:26:33.807Z</updated>
+    <published>2024-10-22T12:28:32.000Z</published>
+    <updated>2024-10-22T14:28:49.405Z</updated>
     
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>使用opencv影像辨識技術偵測草莓甜度</title>
-    <link href="http://example.com/2024/10/22/%E4%BD%BF%E7%94%A8opencv%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98%E6%8A%80%E8%A1%93%E5%81%B5%E6%B8%AC%E8%8D%89%E8%8E%93%E7%94%9C%E5%BA%A6/"/>
-    <id>http://example.com/2024/10/22/%E4%BD%BF%E7%94%A8opencv%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98%E6%8A%80%E8%A1%93%E5%81%B5%E6%B8%AC%E8%8D%89%E8%8E%93%E7%94%9C%E5%BA%A6/</id>
-    <published>2024-10-22T14:26:30.000Z</published>
-    <updated>2024-10-22T14:27:00.777Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><h2 id="我在小的時候就常常聽到影像辨識這個東西"><a href="#我在小的時候就常常聽到影像辨識這個東西" class="headerlink" title="我在小的時候就常常聽到影像辨識這個東西"></a>我在小的時候就常常聽到影像辨識這個東西</h2>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;製作動機&quot;&gt;&lt;a href=&quot;#製作動機&quot; class=&quot;headerlink&quot; title=&quot;製作動機&quot;&gt;&lt;/a&gt;製作動機&lt;/h1&gt;&lt;h2 id=&quot;我在小的時候就常常聽到影像辨識這個東西&quot;&gt;&lt;a href=&quot;#我在小的時候就常常聽到影像辨識這個東西&quot; class</summary>
-      
     
     
     
