@@ -78,6 +78,8 @@ window.addEventListener("DOMContentLoaded", function() {
   navBtn.addEventListener("click", function () {
     html.classList.toggle("show-mobile-nav");
     this.classList.toggle("active");
+    console.log("Hamburger button clicked");
+    
   });
 
   // mobile nav link click

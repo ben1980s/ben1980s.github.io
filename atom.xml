@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-10-22T14:28:49.405Z</updated>
+  <updated>2024-10-23T15:27:14.009Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,8 +21,15 @@
     <link href="http://example.com/2024/10/22/%E5%B0%88%E9%A1%8C%E8%A3%BD%E4%BD%9C-%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1%E7%B3%BB%E7%B5%B1/"/>
     <id>http://example.com/2024/10/22/%E5%B0%88%E9%A1%8C%E8%A3%BD%E4%BD%9C-%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1%E7%B3%BB%E7%B5%B1/</id>
     <published>2024-10-22T12:28:32.000Z</published>
-    <updated>2024-10-22T14:28:49.405Z</updated>
+    <updated>2024-10-23T15:27:14.009Z</updated>
     
+    <content type="html"><![CDATA[<h1 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h1><h3 id="這時得我還是一個很普通的高中生，連專案都沒有做過，平常也只會用python寫寫程式刷刷提而已，所以其實這次的專案花了我很多的時間…，在做的時候還一度懷疑自己到底能不能做出來。"><a href="#這時得我還是一個很普通的高中生，連專案都沒有做過，平常也只會用python寫寫程式刷刷提而已，所以其實這次的專案花了我很多的時間…，在做的時候還一度懷疑自己到底能不能做出來。" class="headerlink" title="這時得我還是一個很普通的高中生，連專案都沒有做過，平常也只會用python寫寫程式刷刷提而已，所以其實這次的專案花了我很多的時間…，在做的時候還一度懷疑自己到底能不能做出來。"></a>這時得我還是一個很普通的高中生，連專案都沒有做過，平常也只會用python寫寫程式刷刷提而已，所以其實這次的專案花了我很多的時間…，在做的時候還一度懷疑自己到底能不能做出來。</h3><h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><h3 id="因為校定必修要製作專題的關係所以就跟同學研究最近熱門的技術、時事，然後剛好那段時間剛度過疫情，而我們就思考疫情給我們帶來負面效果，我們就注意到了長時間上網課久坐，坐姿不良會給人們身體帶來一些疾病，所以我們就想解決這個問題，因此我們就確立主題了，而技術我們則是想選用影像辨識去辨識坐姿。"><a href="#因為校定必修要製作專題的關係所以就跟同學研究最近熱門的技術、時事，然後剛好那段時間剛度過疫情，而我們就思考疫情給我們帶來負面效果，我們就注意到了長時間上網課久坐，坐姿不良會給人們身體帶來一些疾病，所以我們就想解決這個問題，因此我們就確立主題了，而技術我們則是想選用影像辨識去辨識坐姿。" class="headerlink" title="因為校定必修要製作專題的關係所以就跟同學研究最近熱門的技術、時事，然後剛好那段時間剛度過疫情，而我們就思考疫情給我們帶來負面效果，我們就注意到了長時間上網課久坐，坐姿不良會給人們身體帶來一些疾病，所以我們就想解決這個問題，因此我們就確立主題了，而技術我們則是想選用影像辨識去辨識坐姿。"></a>因為校定必修要製作專題的關係所以就跟同學研究最近熱門的技術、時事，然後剛好那段時間剛度過疫情，而我們就思考疫情給我們帶來負面效果，我們就注意到了長時間上網課久坐，坐姿不良會給人們身體帶來一些疾病，所以我們就想解決這個問題，因此我們就確立主題了，而技術我們則是想選用影像辨識去辨識坐姿。</h3><h1 id="opencv"><a href="#opencv" class="headerlink" title="opencv"></a>opencv</h1><h3 id="一開始找資料是找到了opencv這個技術，然後我對這個技術完全沒有一些概念，所以就先上網查資料看看這東西到底怎麼用，之後找到了這個影片"><a href="#一開始找資料是找到了opencv這個技術，然後我對這個技術完全沒有一些概念，所以就先上網查資料看看這東西到底怎麼用，之後找到了這個影片" class="headerlink" title="一開始找資料是找到了opencv這個技術，然後我對這個技術完全沒有一些概念，所以就先上網查資料看看這東西到底怎麼用，之後找到了這個影片"></a>一開始找資料是找到了opencv這個技術，然後我對這個技術完全沒有一些概念，所以就先上網查資料看看這東西到底怎麼用，之後找到了這個影片</h3><h4 id="opencv2小時初學者教學-https-www-youtube-com-watch-v-xjrykYpaBBM-ab-channel-GrandmaCan-E6-88-91-E9-98-BF-E5-AC-A4-E9-83-BD-E6-9C-83"><a href="#opencv2小時初學者教學-https-www-youtube-com-watch-v-xjrykYpaBBM-ab-channel-GrandmaCan-E6-88-91-E9-98-BF-E5-AC-A4-E9-83-BD-E6-9C-83" class="headerlink" title="[opencv2小時初學者教學]https://www.youtube.com/watch?v=xjrykYpaBBM&amp;ab_channel=GrandmaCan-%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83"></a>[opencv2小時初學者教學]<a href="https://www.youtube.com/watch?v=xjrykYpaBBM&ab_channel=GrandmaCan-%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83">https://www.youtube.com/watch?v=xjrykYpaBBM&amp;ab_channel=GrandmaCan-%E6%88%91%E9%98%BF%E5%AC%A4%E9%83%BD%E6%9C%83</a></h4><h3 id="最一開始我想說都跟著影片一起做，而我在影片的最開頭我就卡住了…，因為這影片是比較久以前的，而opencv的函式又已經更新了導致有些語法不一樣，再加上我又是做專案的新手XD-那時候的我連pip都不知道-，所以就卡了超級久，後來是換了opencv的版本才可以繼續跟著做，然後這是我學到的第一個terminal-“pip-install-Opencv-python”。"><a href="#最一開始我想說都跟著影片一起做，而我在影片的最開頭我就卡住了…，因為這影片是比較久以前的，而opencv的函式又已經更新了導致有些語法不一樣，再加上我又是做專案的新手XD-那時候的我連pip都不知道-，所以就卡了超級久，後來是換了opencv的版本才可以繼續跟著做，然後這是我學到的第一個terminal-“pip-install-Opencv-python”。" class="headerlink" title="最一開始我想說都跟著影片一起做，而我在影片的最開頭我就卡住了…，因為這影片是比較久以前的，而opencv的函式又已經更新了導致有些語法不一樣，再加上我又是做專案的新手XD(那時候的我連pip都不知道)，所以就卡了超級久，後來是換了opencv的版本才可以繼續跟著做，然後這是我學到的第一個terminal “pip install Opencv-python”。"></a>最一開始我想說都跟著影片一起做，而我在影片的最開頭我就卡住了…，因為這影片是比較久以前的，而opencv的函式又已經更新了導致有些語法不一樣，再加上我又是做專案的新手XD(那時候的我連pip都不知道)，所以就卡了超級久，後來是換了opencv的版本才可以繼續跟著做，然後這是我學到的第一個terminal “pip install Opencv-python”。</h3><h3 id="從這影片大概可以了解基礎的opencv語法，我在裡面注意到臉部偵測這個，我認為它可以偵測臉部輪廓、物體輪廓，那他正常來說也可以去偵測坐姿。"><a href="#從這影片大概可以了解基礎的opencv語法，我在裡面注意到臉部偵測這個，我認為它可以偵測臉部輪廓、物體輪廓，那他正常來說也可以去偵測坐姿。" class="headerlink" title="從這影片大概可以了解基礎的opencv語法，我在裡面注意到臉部偵測這個，我認為它可以偵測臉部輪廓、物體輪廓，那他正常來說也可以去偵測坐姿。"></a>從這影片大概可以了解基礎的opencv語法，我在裡面注意到臉部偵測這個，我認為它可以偵測臉部輪廓、物體輪廓，那他正常來說也可以去偵測坐姿。</h3><p><img src="https://hackmd.io/_uploads/HJqAf9IeJe.png" alt="偵測輪廓"></p><h3 id="還有另一個比較重要的是導入模型，用模型偵測東西旁邊就會跑出框框，但要根據偵測的東西去調整模型"><a href="#還有另一個比較重要的是導入模型，用模型偵測東西旁邊就會跑出框框，但要根據偵測的東西去調整模型" class="headerlink" title="還有另一個比較重要的是導入模型，用模型偵測東西旁邊就會跑出框框，但要根據偵測的東西去調整模型"></a>還有另一個比較重要的是導入模型，用模型偵測東西旁邊就會跑出框框，但要根據偵測的東西去調整模型</h3><p><img src="https://hackmd.io/_uploads/ByVAHcIlkg.png" alt="模型導入"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前情提要&quot;&gt;&lt;a href=&quot;#前情提要&quot; class=&quot;headerlink&quot; title=&quot;前情提要&quot;&gt;&lt;/a&gt;前情提要&lt;/h1&gt;&lt;h3 id=&quot;這時得我還是一個很普通的高中生，連專案都沒有做過，平常也只會用python寫寫程式刷刷提而已，所以其實這次的專案花</summary>
+      
     
     
     
