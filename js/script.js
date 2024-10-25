@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", function() {
   })
 
   // theme auto click
-  document.querySelector('#theme-auto').addEventListener('click', function() {
+  document.querySelector('#theme-auto')?.addEventListener('click', function() {
     html.classList.remove('theme-light')
     html.classList.remove('theme-dark')
     window.localStorage.setItem('theme', '')
@@ -78,7 +78,6 @@ window.addEventListener("DOMContentLoaded", function() {
   navBtn.addEventListener("click", function () {
     html.classList.toggle("show-mobile-nav");
     this.classList.toggle("active");
-    console.log("Hamburger button clicked");
     
   });
 
