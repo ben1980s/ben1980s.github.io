@@ -22,7 +22,7 @@
 
   
 
-  <title>picoCTF writeup | ben1980s&#39;s Blog</title>
+  <title>機器學習相關製作 | ben1980s&#39;s Blog</title>
 
   
 
@@ -98,11 +98,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">picoCTF writeup</h1>
+          <h1 class="title-wrap">機器學習相關製作</h1>
           <h2 class="title-sub-wrap">
             <strong>ben1980s</strong>
             <span>發布於</span>
-            <time  class="article-date" datetime="2024-10-31T15:14:27.000Z" itemprop="datePublished">2024-10-31</time>
+            <time  class="article-date" datetime="2024-11-28T15:01:34.000Z" itemprop="datePublished">2024-11-28</time>
           </h2>
           
           
@@ -133,36 +133,11 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="picoctf-medium"><a href="#picoctf-medium" class="headerlink" title="picoctf medium"></a>picoctf medium</h1><h2 id="find-me"><a href="#find-me" class="headerlink" title="find me"></a>find me</h2><p>最一開始會看到他給我們帳號密碼 我就直接登入</p>
-<p><img src="https://hackmd.io/_uploads/SkBAEiEiR.png" alt="image"></p>
-<p><img src="https://hackmd.io/_uploads/r1bbrjEi0.png" alt="image"><br>結果登入之後跳出一個讓我尋找東西的地方 但不管我打甚麼都沒反應<br><img src="https://hackmd.io/_uploads/H1JXSsNsR.png" alt="image"><br>因此我想說直接用Burp抓抓看 結果直接在登入時抓到id　翻譯後就是一半的FLAG了<br><img src="https://hackmd.io/_uploads/r1CuSjNs0.png" alt="image"><br>而下面這個302是個轉址 因此我直接把他丟到repeater<br><img src="https://hackmd.io/_uploads/B144UiEjC.png" alt="image"><br>之後點上面的Follow redirection之後就看到剩下的flag了<br><img src="https://hackmd.io/_uploads/BJkwUiVjC.png" alt="image"></p>
-<h3 id="picoCTF-proxies-all-the-way-3d9e3697"><a href="#picoCTF-proxies-all-the-way-3d9e3697" class="headerlink" title="picoCTF{proxies_all_the_way_3d9e3697}"></a><code>picoCTF&#123;proxies_all_the_way_3d9e3697&#125;</code></h3><h2 id="SQL-Direct"><a href="#SQL-Direct" class="headerlink" title="SQL Direct"></a>SQL Direct</h2><p>根據題目意思輸入這串連結到資料庫<br><code>psql -h saturn.picoctf.net -p 60550 -U postgres pico</code><br>然後要下載一堆東西</p>
-<p>之後進來了 照他說的打?跑出指令 往下滑看到一個可以顯示內容的</p>
-<p><img src="https://hackmd.io/_uploads/Skyd2o4sR.png" alt="image"></p>
-<p><img src="https://hackmd.io/_uploads/B1953oEjA.png" alt="image"><br>之後回去打出\dt 可以看到有哪些資料</p>
-<p>之後再打<code>SELECT * FROM flags;</code><br>看這路徑內容有甚麼<br>就可以看到裡面藏著FLAG<br><img src="https://hackmd.io/_uploads/Bymb2i4oR.png" alt="image"><br><code>picoCTF&#123;L3arN_S0m3_5qL_t0d4Y_73b0678f&#125;</code></p>
-<h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><p>進來後檢查資料夾發現一個secret&#x2F;assets 因此我進到secret資料夾裡</p>
-<p><img src="https://hackmd.io/_uploads/ByeSMhEoC.png" alt="image"><br><code>http://saturn.picoctf.net:52623/secret/</code><br><img src="https://hackmd.io/_uploads/rkR_z2NiR.png" alt="image"><br>之後可以看到一個hidden的資料夾 裡面看到一個secret資料夾 裡面說almost found<br>因此我再進去hidden資料夾內<br><code>http://saturn.picoctf.net:52623/secret/hidden/</code><br><img src="https://hackmd.io/_uploads/BJfym34jR.png" alt="image"><br>看到裡面有一個superhidden一樣進入就好了<br><code>http://saturn.picoctf.net:57116/secret/hidden/superhidden/</code><br>裡面就有FLAG<br><img src="https://hackmd.io/_uploads/HkPGN2VsC.png" alt="image"><br><code>picoCTF&#123;succ3ss_@h3n1c@10n_790d2615&#125;</code></p>
-<h2 id="login"><a href="#login" class="headerlink" title="login"></a>login</h2><p>就登入檢查原始碼<br><img src="https://hackmd.io/_uploads/SJED664o0.png" alt="image"><br>點進index.js<br><img src="https://hackmd.io/_uploads/SkwOppViC.png" alt="image"><br>之後看到一串亂碼 是base64 丟去編譯<br><code>cGljb0NURns1M3J2M3JfNTNydjNyXzUzcnYzcl81M3J2M3JfNTNydjNyfQ&quot;!==t</code><br><img src="https://hackmd.io/_uploads/H10qaTEo0.png" alt="image"><br>就得到Flag了<br><code>picoCTF&#123;53rv3r_53rv3r_53rv3r_53rv3r_53rv3r&#125;</code></p>
-<h2 id="MatchTheRegex"><a href="#MatchTheRegex" class="headerlink" title="MatchTheRegex"></a>MatchTheRegex</h2><p>進入頁面看到一個輸入框 隨便打的話會說Wrong<br><img src="https://hackmd.io/_uploads/r1wCeRVjC.png" alt="image"><br><img src="https://hackmd.io/_uploads/rkuWZR4sC.png" alt="image"><br>查看原始碼看到這串<br><img src="https://hackmd.io/_uploads/SkUGZAVi0.png" alt="image"><br>要我打p…甚麼F<br>所以我直接打p…..F 就有FLAG了<br><img src="https://hackmd.io/_uploads/BydE-04sC.png" alt="image"><br><code>picoCTF&#123;succ3ssfully_matchtheregex_c64c9546&#125;</code><br>打picoCTF也有同樣的效果<br><img src="https://hackmd.io/_uploads/S1IDWCNjA.png" alt="image"></p>
-<h2 id="Forbidden-Paths"><a href="#Forbidden-Paths" class="headerlink" title="Forbidden Paths"></a>Forbidden Paths</h2><p>進來後可以看到能夠輸入東西 輸入上面說的會跳奇怪的東西 所以我直接照題目意思<br><code>../../../../flag.txt</code>去找<br><img src="https://hackmd.io/_uploads/S1Ro01Is0.png" alt="image"><br>就會找到FLAG了<br><img src="https://hackmd.io/_uploads/S1Ih01UiR.png" alt="image"><br><code>picoCTF&#123;7h3_p47h_70_5ucc355_e5a6fcbc&#125;</code></p>
-<h2 id="Who-are-you"><a href="#Who-are-you" class="headerlink" title="Who are you?"></a>Who are you?</h2><p>這題我覺得偏難 看網路上作法才會<br><img src="https://hackmd.io/_uploads/BkdCVgUjC.png" alt="image"><br>一開始進到這頁面用burp抓甚麼都看不到 然後看上面的提示說只允許official PicoBrowser進入因此打上這串<br><code>wget http://mercury.picoctf.net:38322/ -U PicoBrowser</code><br>下載完後我們進去<br><img src="https://hackmd.io/_uploads/SyCISeUiR.png" alt="image"><br>進去後看到這個 所以我們加上Referer</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://mercury.picoctf.net:38322/ -U PicoBrowser --header=&#x27;Referer: http://mercury.picoctf.net:38322/&#x27;</span><br></pre></td></tr></table></figure>
-<p><img src="https://hackmd.io/_uploads/rJH6SlUjC.png" alt="image"><br>看到她說只允許2018年 所以我們加上Date</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://mercury.picoctf.net:38322/ -U PicoBrowser --header=&#x27;Referer: http://mercury.picoctf.net:38322/&#x27; --header=&#x27;Date: 2018&#x27;</span><br></pre></td></tr></table></figure>
-<p><img src="https://hackmd.io/_uploads/SJwgLeLiC.png" alt="image"><br>之後又要再加上Dnt</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://mercury.picoctf.net:38322/ -U PicoBrowser --header=&#x27;Referer: http://mercury.picoctf.net:38322/&#x27; --header=&#x27;Date: 2018&#x27; --header=&quot;DNT: dnt&quot;</span><br></pre></td></tr></table></figure>
-<p><img src="https://hackmd.io/_uploads/B13G8gUiA.png" alt="image"><br>然後又說只給瑞典人用…</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://mercury.picoctf.net:38322/ -U PicoBrowser --header=&#x27;Referer: http://mercury.picoctf.net:38322/&#x27; --header=&#x27;Date: 2018&#x27; --header=&quot;DNT: dnt&quot; --header=&quot;X-Forwarded-For: 88.80.28.16&quot;</span><br></pre></td></tr></table></figure>
-<p>之後又要轉語言 有夠麻煩<br><img src="https://hackmd.io/_uploads/rJWd8gUj0.png" alt="image"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://mercury.picoctf.net:38322/ -U PicoBrowser --header=&#x27;Referer: http://mercury.picoctf.net:38322/&#x27; --header=&#x27;Date: 2018&#x27; --header=&quot;DNT: dnt&quot; --header=&quot;X-Forwarded-For: 88.80.28.16&quot; --header=&quot;Accept-language: sv&quot;</span><br></pre></td></tr></table></figure>
-<p>最後終於進來了<br><img src="https://hackmd.io/_uploads/SJgiLgLj0.png" alt="image"><br><code>picoCTF&#123;http_h34d3rs_v3ry_c0Ol_much_w0w_b22d773c&#125;</code></p>
-<h2 id="Trickster"><a href="#Trickster" class="headerlink" title="Trickster"></a>Trickster</h2><p>這題跟前面有一題的easy很像 一用用png偉裝的php檔案去丟<br><img src="https://hackmd.io/_uploads/ryXFhbLoC.png" alt="image"><br>會說成功上傳<br><img src="https://hackmd.io/_uploads/B1pthZUs0.png" alt="image"><br>進到網站裡</p>
-<p><img src="https://hackmd.io/_uploads/Sk8f6bLj0.png" alt="image"><br><code>http://atlas.picoctf.net:53224/uploads/webshell.png.php</code><br>先ls看看有甚麼<br><img src="https://hackmd.io/_uploads/ByuE6-LsR.png" alt="image"><br>只看到我們剛上傳的 所以..&#x2F;出來<br><img src="https://hackmd.io/_uploads/HkL8TZIsC.png" alt="image"><br>可以看到一些txt檔 再來直接cat GNTDOMBWGIZDE.txt就好了<br><img src="https://hackmd.io/_uploads/SyyYpWLsR.png" alt="image"><br><code>picoCTF&#123;c3rt!fi3d_Xp3rt_tr1ckst3r_3f706222&#125;</code></p>
-<h2 id="useless"><a href="#useless" class="headerlink" title="useless"></a>useless</h2><p><img src="https://hackmd.io/_uploads/Sk6-1iOjC.png" alt="image"><br>看到題目就先連上去<br><code> ssh picoplayer@saturn.picoctf.net -p 58827</code><br><img src="https://hackmd.io/_uploads/BJWEkiuiC.png" alt="image"><br>之後ls看裡面有甚麼<br><img src="https://hackmd.io/_uploads/HyuBkidiA.png" alt="image"><br>看到有一個useless先cat他<br>會發現裡面有一堆東西<br><img src="https://hackmd.io/_uploads/H168ki_jA.png" alt="image"><br>之後再直接man useless看它的使用方式裡面就會有flag了</p>
-<p><img src="https://hackmd.io/_uploads/rkGYJjui0.png" alt="image"></p>
-<p>picoCTF{us3l3ss_ch4ll3ng3_3xpl0it3d_6140}</p>
-<h2 id="Permissions"><a href="#Permissions" class="headerlink" title="Permissions"></a>Permissions</h2><p>連接上之後會發現沒有權限<br><img src="https://hackmd.io/_uploads/H1X02N2oR.png" alt="image"><br><img src="https://hackmd.io/_uploads/Sk-xp43o0.png" alt="image"><br>之後vim 一個文件 修改名稱<br><img src="https://hackmd.io/_uploads/rJNmT43jR.png" alt="image"><br>就拿到root權限了<br><img src="https://hackmd.io/_uploads/S1PDTN3sA.png" alt="image"><br>因此直接cd &#x2F;root&#x2F; 之後進去會看到一個flag.txt 直接Cat<br><img src="https://hackmd.io/_uploads/HJf9pV2sA.png" alt="image"><br><code>picoCTF&#123;uS1ng_v1m_3dit0r_89e9cf1a&#125;</code></p>
+        <h1 id="機器學習涉略"><a href="#機器學習涉略" class="headerlink" title="機器學習涉略"></a>機器學習涉略</h1><h2 id="一、監督式學習-Supervised-learning"><a href="#一、監督式學習-Supervised-learning" class="headerlink" title="一、監督式學習(Supervised learning)"></a>一、監督式學習(Supervised learning)</h2><h3 id="1-yolov8"><a href="#1-yolov8" class="headerlink" title="1.yolov8"></a>1.yolov8</h3><h4 id="我嘗試利用yolov8自行訓練模型，主要目標為判斷葡萄腐爛度、甜度、成熟度，最初需要label圖片，我將分類區分為兩種，一種是mature，另一種則為rot，需要大量資料以及準確特徵。"><a href="#我嘗試利用yolov8自行訓練模型，主要目標為判斷葡萄腐爛度、甜度、成熟度，最初需要label圖片，我將分類區分為兩種，一種是mature，另一種則為rot，需要大量資料以及準確特徵。" class="headerlink" title="我嘗試利用yolov8自行訓練模型，主要目標為判斷葡萄腐爛度、甜度、成熟度，最初需要label圖片，我將分類區分為兩種，一種是mature，另一種則為rot，需要大量資料以及準確特徵。"></a>我嘗試利用yolov8自行訓練模型，主要目標為判斷葡萄腐爛度、甜度、成熟度，最初需要label圖片，我將分類區分為兩種，一種是mature，另一種則為rot，需要大量資料以及準確特徵。</h4><h4 id="製作完後我結合了opencv去根據葡萄的色澤、大小判斷甜度，色澤用rgb分級，大小用-x-y-座標值分級。"><a href="#製作完後我結合了opencv去根據葡萄的色澤、大小判斷甜度，色澤用rgb分級，大小用-x-y-座標值分級。" class="headerlink" title="製作完後我結合了opencv去根據葡萄的色澤、大小判斷甜度，色澤用rgb分級，大小用[x,y]座標值分級。"></a>製作完後我結合了opencv去根據葡萄的色澤、大小判斷甜度，色澤用rgb分級，大小用[x,y]座標值分級。</h4><h2 id="二、強化學習-Reinforcement-learning"><a href="#二、強化學習-Reinforcement-learning" class="headerlink" title="二、強化學習(Reinforcement learning)"></a>二、強化學習(Reinforcement learning)</h2><h3 id="2-policy-based中的PPO-Proximal-Policy-Optimization-演算法"><a href="#2-policy-based中的PPO-Proximal-Policy-Optimization-演算法" class="headerlink" title="2.policy-based中的PPO(Proximal Policy Optimization)演算法"></a>2.policy-based中的PPO(Proximal Policy Optimization)演算法</h3><h4 id="我的自主學習是製作了一款簡易的攻防遊戲，受到openAI的研究啟發，使用unity製作角色、建構訓練環境"><a href="#我的自主學習是製作了一款簡易的攻防遊戲，受到openAI的研究啟發，使用unity製作角色、建構訓練環境" class="headerlink" title="我的自主學習是製作了一款簡易的攻防遊戲，受到openAI的研究啟發，使用unity製作角色、建構訓練環境"></a>我的自主學習是製作了一款簡易的攻防遊戲，受到openAI的研究啟發，使用unity製作角色、建構訓練環境</h4><p><a target="_blank" rel="noopener" href="https://openai.com/index/emergent-tool-use/">openAI鬼抓人</a></p>
+<h4 id="而詳細的模型訓練步驟是參考下面這部影片，主要利用-python-PyTorch-protobuf-訓練模型"><a href="#而詳細的模型訓練步驟是參考下面這部影片，主要利用-python-PyTorch-protobuf-訓練模型" class="headerlink" title="而詳細的模型訓練步驟是參考下面這部影片，主要利用 python+PyTorch+protobuf 訓練模型"></a>而詳細的模型訓練步驟是參考下面這部影片，主要利用 python+PyTorch+protobuf 訓練模型</h4><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RANRz9oyzko">學習RL模型訓練</a></p>
+<h4 id="實際執行畫面"><a href="#實際執行畫面" class="headerlink" title="實際執行畫面"></a>實際執行畫面</h4><p><img src="https://hackmd.io/_uploads/SyVHo0Bm1e.png" alt="image"></p>
+<h2 id="三、深度學習-Deep-learning"><a href="#三、深度學習-Deep-learning" class="headerlink" title="三、深度學習 Deep learning"></a>三、深度學習 Deep learning</h2><h3 id="mediapipe應用"><a href="#mediapipe應用" class="headerlink" title="mediapipe應用"></a>mediapipe應用</h3><h4 id="mediapipe中的手部追蹤-hand-tracking-、臉部檢測與面部表情識別-Face-Detection-and-Facial-Landmark-Detection-、姿態估計-Pose-Estimation-這幾種模型通常基於捲基神經網絡-CNN-。"><a href="#mediapipe中的手部追蹤-hand-tracking-、臉部檢測與面部表情識別-Face-Detection-and-Facial-Landmark-Detection-、姿態估計-Pose-Estimation-這幾種模型通常基於捲基神經網絡-CNN-。" class="headerlink" title="mediapipe中的手部追蹤(hand tracking)、臉部檢測與面部表情識別 (Face Detection and Facial Landmark Detection)、姿態估計 (Pose Estimation)這幾種模型通常基於捲基神經網絡(CNN)。"></a>mediapipe中的手部追蹤(hand tracking)、臉部檢測與面部表情識別 (Face Detection and Facial Landmark Detection)、姿態估計 (Pose Estimation)這幾種模型通常基於捲基神經網絡(CNN)。</h4><h4 id="而我利用其中的姿態估計去判斷人體的坐姿是否正確，藉由模型在人體關節畫上關鍵點，並判斷這些關鍵點的-x-y-坐標軸進行計算，判斷是否有坐姿不良的問題，下圖為研究流程圖"><a href="#而我利用其中的姿態估計去判斷人體的坐姿是否正確，藉由模型在人體關節畫上關鍵點，並判斷這些關鍵點的-x-y-坐標軸進行計算，判斷是否有坐姿不良的問題，下圖為研究流程圖" class="headerlink" title="而我利用其中的姿態估計去判斷人體的坐姿是否正確，藉由模型在人體關節畫上關鍵點，並判斷這些關鍵點的[x,y]坐標軸進行計算，判斷是否有坐姿不良的問題，下圖為研究流程圖"></a>而我利用其中的姿態估計去判斷人體的坐姿是否正確，藉由模型在人體關節畫上關鍵點，並判斷這些關鍵點的[x,y]坐標軸進行計算，判斷是否有坐姿不良的問題，下圖為研究流程圖</h4><p><img src="https://hackmd.io/_uploads/r1IU6ABQ1e.png" alt="image"></p>
+<h4 id="下圖為順利描繪出關鍵點並判斷坐姿"><a href="#下圖為順利描繪出關鍵點並判斷坐姿" class="headerlink" title="下圖為順利描繪出關鍵點並判斷坐姿"></a>下圖為順利描繪出關鍵點並判斷坐姿</h4><p><img src="https://hackmd.io/_uploads/BkkipRr7Jl.png" alt="image"></p>
 
       </section>
 
@@ -170,28 +145,14 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-    <div class="card-text">
-      
-        <a href="/2024/11/28/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E8%A3%BD%E4%BD%9C/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">機器學習相關製作</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2024/10/27/%E5%B0%88%E6%A1%88%E8%A3%BD%E4%BD%9C-YOLOv8%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">專案製作-YOLOv8影像辨識</h2>
+        <a href="/2024/10/31/picoCTF-writeup/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">picoCTF writeup</h2>
         </a>
       
       <div class="card-text--row">Older</div>

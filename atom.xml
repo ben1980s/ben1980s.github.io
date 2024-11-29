@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-10-31T15:15:40.945Z</updated>
+  <updated>2024-11-28T15:03:59.602Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>機器學習相關製作</title>
+    <link href="http://example.com/2024/11/28/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E8%A3%BD%E4%BD%9C/"/>
+    <id>http://example.com/2024/11/28/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E8%A3%BD%E4%BD%9C/</id>
+    <published>2024-11-28T15:01:34.000Z</published>
+    <updated>2024-11-28T15:03:59.602Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="機器學習涉略"><a href="#機器學習涉略" class="headerlink" title="機器學習涉略"></a>機器學習涉略</h1><h2 id="一、監督式學習-Supervised-learning"><a href="#一、監督式學習-Supervised-learning" class="headerlink" title="一、監督式學習(Supervised learning)"></a>一、監督式學習(Supervised learning)</h2><h3 id="1-yolov8"><a href="#1-yolov8" class="headerlink" title="1.yolov8"></a>1.yolov8</h3><h4 id="我嘗試利用yolov8自行訓練模型，主要目標為判斷葡萄腐爛度、甜度、成熟度，最初需要label圖片，我將分類區分為兩種，一種是mature，另一種則為rot，需要大量資料以及準確特徵。"><a href="#我嘗試利用yolov8自行訓練模型，主要目標為判斷葡萄腐爛度、甜度、成熟度，最初需要label圖片，我將分類區分為兩種，一種是mature，另一種則為rot，需要大量資料以及準確特徵。" class="headerlink" title="我嘗試利用yolov8自行訓練模型，主要目標為判斷葡萄腐爛度、甜度、成熟度，最初需要label圖片，我將分類區分為兩種，一種是mature，另一種則為rot，需要大量資料以及準確特徵。"></a>我嘗試利用yolov8自行訓練模型，主要目標為判斷葡萄腐爛度、甜度、成熟度，最初需要label圖片，我將分類區分為兩種，一種是mature，另一種則為rot，需要大量資料以及準確特徵。</h4><h4 id="製作完後我結合了opencv去根據葡萄的色澤、大小判斷甜度，色澤用rgb分級，大小用-x-y-座標值分級。"><a href="#製作完後我結合了opencv去根據葡萄的色澤、大小判斷甜度，色澤用rgb分級，大小用-x-y-座標值分級。" class="headerlink" title="製作完後我結合了opencv去根據葡萄的色澤、大小判斷甜度，色澤用rgb分級，大小用[x,y]座標值分級。"></a>製作完後我結合了opencv去根據葡萄的色澤、大小判斷甜度，色澤用rgb分級，大小用[x,y]座標值分級。</h4><h2 id="二、強化學習-Reinforcement-learning"><a href="#二、強化學習-Reinforcement-learning" class="headerlink" title="二、強化學習(Reinforcement learning)"></a>二、強化學習(Reinforcement learning)</h2><h3 id="2-policy-based中的PPO-Proximal-Policy-Optimization-演算法"><a href="#2-policy-based中的PPO-Proximal-Policy-Optimization-演算法" class="headerlink" title="2.policy-based中的PPO(Proximal Policy Optimization)演算法"></a>2.policy-based中的PPO(Proximal Policy Optimization)演算法</h3><h4 id="我的自主學習是製作了一款簡易的攻防遊戲，受到openAI的研究啟發，使用unity製作角色、建構訓練環境"><a href="#我的自主學習是製作了一款簡易的攻防遊戲，受到openAI的研究啟發，使用unity製作角色、建構訓練環境" class="headerlink" title="我的自主學習是製作了一款簡易的攻防遊戲，受到openAI的研究啟發，使用unity製作角色、建構訓練環境"></a>我的自主學習是製作了一款簡易的攻防遊戲，受到openAI的研究啟發，使用unity製作角色、建構訓練環境</h4><p><a href="https://openai.com/index/emergent-tool-use/">openAI鬼抓人</a></p><h4 id="而詳細的模型訓練步驟是參考下面這部影片，主要利用-python-PyTorch-protobuf-訓練模型"><a href="#而詳細的模型訓練步驟是參考下面這部影片，主要利用-python-PyTorch-protobuf-訓練模型" class="headerlink" title="而詳細的模型訓練步驟是參考下面這部影片，主要利用 python+PyTorch+protobuf 訓練模型"></a>而詳細的模型訓練步驟是參考下面這部影片，主要利用 python+PyTorch+protobuf 訓練模型</h4><p><a href="https://www.youtube.com/watch?v=RANRz9oyzko">學習RL模型訓練</a></p><h4 id="實際執行畫面"><a href="#實際執行畫面" class="headerlink" title="實際執行畫面"></a>實際執行畫面</h4><p><img src="https://hackmd.io/_uploads/SyVHo0Bm1e.png" alt="image"></p><h2 id="三、深度學習-Deep-learning"><a href="#三、深度學習-Deep-learning" class="headerlink" title="三、深度學習 Deep learning"></a>三、深度學習 Deep learning</h2><h3 id="mediapipe應用"><a href="#mediapipe應用" class="headerlink" title="mediapipe應用"></a>mediapipe應用</h3><h4 id="mediapipe中的手部追蹤-hand-tracking-、臉部檢測與面部表情識別-Face-Detection-and-Facial-Landmark-Detection-、姿態估計-Pose-Estimation-這幾種模型通常基於捲基神經網絡-CNN-。"><a href="#mediapipe中的手部追蹤-hand-tracking-、臉部檢測與面部表情識別-Face-Detection-and-Facial-Landmark-Detection-、姿態估計-Pose-Estimation-這幾種模型通常基於捲基神經網絡-CNN-。" class="headerlink" title="mediapipe中的手部追蹤(hand tracking)、臉部檢測與面部表情識別 (Face Detection and Facial Landmark Detection)、姿態估計 (Pose Estimation)這幾種模型通常基於捲基神經網絡(CNN)。"></a>mediapipe中的手部追蹤(hand tracking)、臉部檢測與面部表情識別 (Face Detection and Facial Landmark Detection)、姿態估計 (Pose Estimation)這幾種模型通常基於捲基神經網絡(CNN)。</h4><h4 id="而我利用其中的姿態估計去判斷人體的坐姿是否正確，藉由模型在人體關節畫上關鍵點，並判斷這些關鍵點的-x-y-坐標軸進行計算，判斷是否有坐姿不良的問題，下圖為研究流程圖"><a href="#而我利用其中的姿態估計去判斷人體的坐姿是否正確，藉由模型在人體關節畫上關鍵點，並判斷這些關鍵點的-x-y-坐標軸進行計算，判斷是否有坐姿不良的問題，下圖為研究流程圖" class="headerlink" title="而我利用其中的姿態估計去判斷人體的坐姿是否正確，藉由模型在人體關節畫上關鍵點，並判斷這些關鍵點的[x,y]坐標軸進行計算，判斷是否有坐姿不良的問題，下圖為研究流程圖"></a>而我利用其中的姿態估計去判斷人體的坐姿是否正確，藉由模型在人體關節畫上關鍵點，並判斷這些關鍵點的[x,y]坐標軸進行計算，判斷是否有坐姿不良的問題，下圖為研究流程圖</h4><p><img src="https://hackmd.io/_uploads/r1IU6ABQ1e.png" alt="image"></p><h4 id="下圖為順利描繪出關鍵點並判斷坐姿"><a href="#下圖為順利描繪出關鍵點並判斷坐姿" class="headerlink" title="下圖為順利描繪出關鍵點並判斷坐姿"></a>下圖為順利描繪出關鍵點並判斷坐姿</h4><p><img src="https://hackmd.io/_uploads/BkkipRr7Jl.png" alt="image"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;機器學習涉略&quot;&gt;&lt;a href=&quot;#機器學習涉略&quot; class=&quot;headerlink&quot; title=&quot;機器學習涉略&quot;&gt;&lt;/a&gt;機器學習涉略&lt;/h1&gt;&lt;h2 id=&quot;一、監督式學習-Supervised-learning&quot;&gt;&lt;a href=&quot;#一、監督式學習-Su</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>picoCTF writeup</title>
