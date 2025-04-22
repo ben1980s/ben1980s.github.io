@@ -105,6 +105,11 @@
             <time  class="article-date" datetime="2024-10-27T09:40:01.000Z" itemprop="datePublished">2024-10-27</time>
           </h2>
           
+            <h2 class="last-time">
+              <span>最後更新於</span>
+              <time  class="article-updated" datetime="2025-04-22T12:12:16.428Z" itemprop="dateUpdated">2025-04-22</time>
+            </h2>
+          
           
           <ul class="wrap-list dark">
   
@@ -133,7 +138,14 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        
+        <h1 id="製作原因"><a href="#製作原因" class="headerlink" title="製作原因"></a>製作原因</h1><p>在開始接觸 YOLOv8 之前，我曾使用 OpenCV 對人體進行影像辨識，不過當時主要是套用他人訓練好的模型來實作。這樣的經驗讓我產生了好奇：如果想自行訓練一個專屬的模型，該怎麼做呢？剛好學校開設了 YOLOv8 的相關課程，於是我決定嘗試自己動手訓練一個模型，深入了解影像辨識背後的原理與流程。</p>
+<h1 id="製作流程"><a href="#製作流程" class="headerlink" title="製作流程"></a>製作流程</h1><p>在深入了解後，我才真正體會到模型訓練的過程有多繁瑣。從蒐集圖片、手動標註（label）每張圖片，到為每個目標加上正確的標籤，都是需要投入大量時間與耐心的工作。而即使完成訓練，還得不斷調整模型參數以提升準確度。在整個流程中，最花時間的部分莫過於圖片標註，這讓我更加敬佩那些從零開始建立資料集的開發者們。(大致像下方的流程圖)<br><img src="https://hackmd.io/_uploads/rJ6dN-S1le.png" alt="圖片"></p>
+<h1 id="製作過程"><a href="#製作過程" class="headerlink" title="製作過程"></a>製作過程</h1><p>我最初是先用LabelImg這個軟體去框選圖片的，因為此次我的實驗主題是判斷葡萄是否腐爛、甜度分級，因此我將標籤種類分為兩種，分別是mature、rot(如下圖)，如果是mature的話旁邊的數字則代表著甜度。<br><img src="https://hackmd.io/_uploads/SkV-rZr1el.png" alt="圖片"><br><img src="https://hackmd.io/_uploads/B15bHWHJxl.png" alt="圖片"><br>框選完圖片之後需要將這些資料都轉換成onnx也就是yolov8支援的訓練格式，下方最左邊的15代表的是標籤的類型，右邊則是座標等等..。<br><img src="https://hackmd.io/_uploads/BJUSrZByxg.png" alt="圖片"><br>而此次我是用colab去跑訓練的，因此我需要把onnx檔案以及圖片都上傳到雲端</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">yolov8_extracted/</span><br><span class="line">  yolov8/</span><br><span class="line">    google_colab_config.yaml</span><br><span class="line">    yolov8.ipynb</span><br><span class="line">    data/</span><br><span class="line">      labels/</span><br><span class="line">        val.cache</span><br><span class="line">        train.cache</span><br><span class="line">        train/</span><br><span class="line">          gunter-hoffmann-LYaW8eq3mjs-unsplash.txt</span><br><span class="line">          marius-ciocirlan-Llqq7lv-Rjk-unsplash.txt</span><br><span class="line">          pexels-quang-nguyen-vinh-8260002.txt</span><br><span class="line">          ...</span><br><span class="line">          pexels-jenny-brown-15951578.txt</span><br><span class="line">          OIP (4).txt</span><br><span class="line">          pexels-annie-bailey-14455908.txt</span><br></pre></td></tr></table></figure>
+<p>主目錄內有一個 yolov8.ipynb 筆記本檔案，和一個 google_colab_config.yaml 設定檔。</p>
+<p>data&#x2F;labels&#x2F; 資料夾中有兩個快取檔 val.cache 和 train.cache，以及一個 train&#x2F; 子資料夾。</p>
+<p>train&#x2F; 子資料夾裡面是大量的 .txt 標註檔案，應該對應每張訓練圖片的 YOLO 標籤資訊。</p>
+
       </section>
 
       
