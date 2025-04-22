@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-11-28T15:03:59.602Z</updated>
+  <updated>2025-03-28T12:37:31.695Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>特選結果</title>
+    <link href="http://example.com/2025/03/28/%E7%89%B9%E9%81%B8%E7%B5%90%E6%9E%9C/"/>
+    <id>http://example.com/2025/03/28/%E7%89%B9%E9%81%B8%E7%B5%90%E6%9E%9C/</id>
+    <published>2025-03-28T12:30:32.000Z</published>
+    <updated>2025-03-28T12:37:31.695Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>學校</th><th>書審</th><th>面試</th><th>結果</th><th>報名人數</th></tr></thead><tbody><tr><td>元智資工</td><td><span style="color:red;">91.33</span></td><td>純書審</td><td><span style="color:orange;">備取8(備上)</span></td><td>——</td></tr><tr><td>逢甲資工</td><td><span style="color:green;">87.67</span></td><td><span style="color:blue;">92.77</span></td><td><span style="color:green;">正取2</span></td><td>117取9</td></tr><tr><td>宜蘭資安</td><td><span style="color:green;">89.50</span></td><td><span style="color:blue;">91.50</span></td><td><span style="color:green;">正取2</span></td><td>——</td></tr><tr><td>中山醫資</td><td><span style="color:green;">89.02</span></td><td>純書審</td><td><span style="color:orange;">備取1(備上)</span></td><td>——</td></tr><tr><td>嘉義資工</td><td><span style="color:green;">83.70</span></td><td><span style="color:blue;">89.75</span></td><td><span style="color:orange;">備取2(備上)</span></td><td>——</td></tr><tr><td>逢甲資安</td><td><span style="color:green;">84.17</span></td><td><span style="color:blue;">92.93</span></td><td><span style="color:orange;">備取2(備上)</span></td><td>28取3</td></tr><tr><td>宜蘭資工</td><td><span style="color:green;">93.25</span></td><td><span style="color:blue;">92.50</span></td><td><span style="color:orange;">備取2(備上)</span></td><td>——</td></tr><tr><td>中原資工</td><td><span style="color:green;">82.8</span></td><td><span style="color:blue;">80.6</span></td><td><span style="color:orange;">備取13(備上)</span></td><td>70取3</td></tr><tr><td>南大資工</td><td><span style="color:green;">83.50</span></td><td><span style="color:blue;">83.45</span></td><td><span style="color:orange;">備取5</span></td><td>51取3</td></tr><tr><td>輔大資工</td><td><span style="color:green;">85.66</span></td><td><span style="color:blue;">87.33</span></td><td><span style="color:orange;">備取13</span></td><td>32取3</td></tr><tr><td>高雄資工</td><td><span style="color:green;">83.00</span></td><td><span style="color:blue;">88.33</span></td><td><span style="color:orange;">備取14</span></td><td>71取3</td></tr><tr><td>彰師資工</td><td><span style="color:green;">85.多</span></td><td>X</td><td><span style="color:red;">書審被刷</span></td><td>復試取6</td></tr><tr><td>中興資工</td><td><span style="color:green;">85.多</span></td><td>X</td><td><span style="color:red;">書審被刷</span></td><td>70幾</td></tr><tr><td>海大資工</td><td><span style="color:green;">84</span></td><td>X</td><td><span style="color:red;">書審被刷</span></td><td>71</td></tr><tr><td>暨南資工</td><td>不知道</td><td>沒去面</td><td>——</td><td>——</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;學校&lt;/th&gt;
+&lt;th&gt;書審&lt;/th&gt;
+&lt;th&gt;面試&lt;/th&gt;
+&lt;th&gt;結果&lt;/th&gt;
+&lt;th&gt;報名人數&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;元智資工&lt;/td&gt;
+&lt;td&gt;&lt;span style=</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>機器學習相關製作</title>
@@ -137,9 +169,9 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2024/10/18/hello-world/"/>
-    <id>http://example.com/2024/10/18/hello-world/</id>
-    <published>2024-10-18T15:30:01.046Z</published>
+    <link href="http://example.com/1970/01/01/hello-world/"/>
+    <id>http://example.com/1970/01/01/hello-world/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
     <updated>2024-10-18T15:30:01.046Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
