@@ -6,7 +6,7 @@
   <link href="https://ben1980s.github.io/atom.xml" rel="self"/>
   
   <link href="https://ben1980s.github.io/"/>
-  <updated>2025-06-02T06:25:15.200Z</updated>
+  <updated>2025-06-02T11:57:55.283Z</updated>
   <id>https://ben1980s.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>picoctf write-up</title>
+    <link href="https://ben1980s.github.io/2025/06/02/picoctf/"/>
+    <id>https://ben1980s.github.io/2025/06/02/picoctf/</id>
+    <published>2025-06-02T11:44:21.000Z</published>
+    <updated>2025-06-02T11:57:55.283Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;picoctf-medium&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#picoctf-medium&quot;&gt;&lt;/a&gt; picoctf medium&lt;/h1&gt;
+&lt;h2 id=&quot;find-me&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>特選結果</title>
