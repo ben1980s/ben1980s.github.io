@@ -6,7 +6,7 @@
   <link href="https://ben1980s.github.io/atom.xml" rel="self"/>
   
   <link href="https://ben1980s.github.io/"/>
-  <updated>2025-06-02T11:57:55.283Z</updated>
+  <updated>2025-07-02T15:01:12.994Z</updated>
   <id>https://ben1980s.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AIS3 pre-exam</title>
+    <link href="https://ben1980s.github.io/2025/07/02/AIS3-pre-exam/"/>
+    <id>https://ben1980s.github.io/2025/07/02/AIS3-pre-exam/</id>
+    <published>2025-07-02T14:00:32.000Z</published>
+    <updated>2025-07-02T15:01:12.994Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;心得&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#心得&quot;&gt;&lt;/a&gt; 心得&lt;/h1&gt;
+&lt;p&gt;第二次參加CTF競賽想說有報名myfirstctf就順便一起報名了pre-exam,所以write</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>picoctf write-up</title>
